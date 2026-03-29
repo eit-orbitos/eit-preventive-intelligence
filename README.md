@@ -1,52 +1,90 @@
 # 🚀 EIT Preventive Intelligence
 
-A real-time AI system that detects fatigue and predicts human risk using  
+A real-time AI safety system that detects fatigue and predicts human risk using  
 **EIT (Energy–Information Transformation)**.
 
 ---
 
-## 🧠 What it does
+## 🧠 Overview
 
-This system combines:
+This project combines:
 
-- 👁️ Computer Vision (drowsiness detection)
-- 🤖 AI decision agent
-- 📊 Risk modeling (EIT-based)
-- ⚡ Real-time monitoring
+- Computer vision for drowsiness detection
+- EIT-based nonlinear risk modeling
+- AI agent reasoning
+- Session memory
+- Real-time API
+- Interactive dashboard
 
 ---
 
-## ⚙️ Core Idea
+## ⚙️ Core Model
 
-Instead of just detecting fatigue, this system models:
+The system estimates:
 
-- **Θ (Theta)** → system stability  
+- **Θ (Theta)** → structural stability  
 - **Λ (Lambda)** → intelligence / reaction quality  
-- **F** → physiological state  
-- **Load** → environmental stress  
+- **F** → physiological condition  
+- **Load** → environmental pressure  
 
-Then computes:
+Then computes risk from these state variables.
 
-```math
-Risk ∝ Load / (Θ · Λ · F)
-🔥 Features
-Real-time fatigue detection
-Risk scoring engine
-AI agent decision layer
-Trend tracking over time
-Live dashboard system
-🚧 Status
+---
 
-🟢 MVP (Minimum Viable Product)
-🔜 Expanding to real-world deployment
+## 📁 Main Files
 
-🏗️ Vision
+- `eit_engine.py` — EIT scoring, risk, trend, alerts
+- `cv_engine.py` — face/eye analysis and drowsiness scoring
+- `ai_agent.py` — decision agent
+- `agent_memory.py` — session memory
+- `api.py` — FastAPI backend
+- `dashboard.py` — Streamlit dashboard
+- `train_alpha_beta.py` — parameter tuning
+- `requirements.txt` — dependencies
 
-To build a Preventive Intelligence System that:
+---
 
-predicts danger before it happens
-protects drivers and workers
-integrates with real-world systems
+## 🔥 Features
+
+- Real-time fatigue-aware risk scoring
+- Trend tracking over time
+- AI-generated next-step recommendations
+- Alert system
+- Dashboard monitoring
+- Expandable architecture for browser/mobile camera input
+
+---
+
+## 🚧 Status
+
+**Current stage:** MVP / prototype
+
+Planned next upgrades:
+
+- live camera-to-backend integration
+- stronger CV metrics
+- deployment
+- startup branding
+- investor/demo version
+
+---
+
+## ▶️ Run Locally
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+2. Train alpha and beta
+python train_alpha_beta.py
+3. Start the API
+uvicorn api:app --reload
+4. Start the dashboard
+streamlit run dashboard.py
+🌐 API Endpoints
+GET / → API status
+GET /health → health check
+POST /predict → risk prediction
+WS /ws/{session_id} → live streaming
 👤 Author
 
 Built by eit-orbitos
