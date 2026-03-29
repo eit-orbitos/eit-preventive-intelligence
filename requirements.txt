@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+pillow
+opencv-python
+mediapipe==0.10.9
+numpy
+websocket-client
+pandas
+requests
+streamlit
