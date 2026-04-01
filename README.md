@@ -85,6 +85,9 @@ GET / → API status
 GET /health → health check
 POST /predict → risk prediction
 WS /ws/{session_id} → live streaming
-👤 Author
 
+## Authors
+
+Toni Angel Mladenovski – Lead Developer  
+Mihail Mladenski – Contributor
 Built by eit-orbitos
